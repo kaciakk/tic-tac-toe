@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color:red;
+}
+
+.X {
+    color: white;
+}
+
+.O {
+    color: black;
+}
+
+#status {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#restartButton {
+    background-color: green;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#wins, #losses, #draws {
+    font-size: 16px;
+    margin: 10px;
+}
